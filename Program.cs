@@ -9,20 +9,18 @@
 int m = 4, n = 5; 
 int[,] array = new int[m, n]; 
 for (int i = 0; i < m; i++) 
-{
+{ 
     for (int j = 0; j < n; j++) 
     { 
-        array[i, j] = new Random().Next(10); 
+        array[i, j] = new Random().Next(20); 
         Console.Write($"{array[i, j]} "); 
     } 
-    Console.WriteLine(); 
+Console.WriteLine(); 
 }
-    for (int j = 0; j < n; j++) 
-{ 
-    int sum = 0; 
-    for (int i = 0; i < m; i++)  
-    { 
-        sum += array[i, j]; 
-    } 
-Console.Write($"Среднее арифметическое {j + 1} столбца = {(double)sum / m}\n"); 
-}
+int a, b; int.TryParse(Console.ReadLine()!, out a); b = a % 10; a /= 10; 
+if (a >= array.GetLength(0) || b >= array.GetLength(1) || a < 0) 
+    Console.Write($"Такого числа нет в массиве!"); 
+else
+    {
+    Console.Write($"{array[a, b]}");
+    }
