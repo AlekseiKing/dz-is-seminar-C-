@@ -61,21 +61,23 @@ void TestMineLineArray()
                                 {2,2,2,2},
                                 {3,3,3,3},
                                 {3,3,3,3}};
-    int[,] array3 = new int[3, 4]{
-                                {3,3,3,3},
+    int[,] array3 = new int[3, 4]{{3,3,3,3},
                                 {3,3,3,3},
                                 {2,2,2,2}};
-    int[,] array4 = new int[4, 3]{
-                                {3,3,3},
+    int[,] array4 = new int[4, 3]{{3,3,3},
                                 {3,3,3},
                                 {3,3,3},
                                 {2,2,2}};
     if (MinLineArray(array1) == 1) Console.WriteLine("Test#1: Right!");
-    else Console.WriteLine("Test#1: Wrong!");
+    else 
+    Console.WriteLine("Test#1: Wrong!");
     if (MinLineArray(array2) == 2) Console.WriteLine("Test#2: Right!");
-    else Console.WriteLine("Test#2: Wrong!");
+    else 
+    Console.WriteLine("Test#2: Wrong!");
     if (MinLineArray(array3) == 3) Console.WriteLine("Test#3: Right!");
-    else Console.WriteLine("Test#3: Wrong!");
+    else 
+    Console.WriteLine("Test#3: Wrong!");
     if (MinLineArray(array4) == 4) Console.WriteLine("Test#4: Right!");
-    else Console.WriteLine("Test#4: Wrong!");
+    else 
+    Console.WriteLine("Test#4: Wrong!");
 }
