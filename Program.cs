@@ -20,7 +20,8 @@ int[,] array = new int[4, 4]{{1,4,7,2},
 
 
 
-Console.WriteLine("Минимальная сумма элементов" + $" по строкам в {MinLineArray(array)} строке ");
+Console.WriteLine("Минимальная сумма элементов"
++ $" по строкам в {MinLineArray(array)} строке ");
 TestMineLineArray();
 
 int MinLineArray(int[,] _array)
@@ -70,15 +71,11 @@ void TestMineLineArray()
                                 {3,3,3},
                                 {2,2,2}};
     if (MinLineArray(array1) == 1) Console.WriteLine("Test#1: Right!");
-    else 
-    Console.WriteLine("Test#1: Wrong!");
+    else Console.WriteLine("Test#1: Wrong!");
     if (MinLineArray(array2) == 2) Console.WriteLine("Test#2: Right!");
-    else 
-    Console.WriteLine("Test#2: Wrong!");
+    else Console.WriteLine("Test#2: Wrong!");
     if (MinLineArray(array3) == 3) Console.WriteLine("Test#3: Right!");
-    else 
-    Console.WriteLine("Test#3: Wrong!");
+    else Console.WriteLine("Test#3: Wrong!");
     if (MinLineArray(array4) == 4) Console.WriteLine("Test#4: Right!");
-    else 
-    Console.WriteLine("Test#4: Wrong!");
+    else Console.WriteLine("Test#4: Wrong!");
 }
